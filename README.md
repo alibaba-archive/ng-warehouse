@@ -1,4 +1,4 @@
-ng-warehouse v0.1.0 [![Build Status](https://travis-ci.org/teambition/ng-warehouse.svg)](https://travis-ci.org/teambition/ng-warehouse)
+ng-warehouse v0.1.1 [![Build Status](https://travis-ci.org/teambition/ng-warehouse.svg)](https://travis-ci.org/teambition/ng-warehouse)
 ====
 A data cache with events for AngularJS.
 

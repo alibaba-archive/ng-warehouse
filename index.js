@@ -81,15 +81,15 @@
           data = value;
         }
         this._store.set(key, data);
-        value = clone(data);
         if (silent) return this;
+        value = clone(data);
         this.emit('change:' + key, key, value);
         this.emit('change', key, value);
         return this;
       };
 
       Matrix.prototype.add = function (key, value, silent) {
-        if (this._store.has(key)) return this.set(key, value);
+        if (this._store.has(key)) return this.set(key, value, silent);
         this._store.set(key, value);
         if (!silent) this.emit('add', key, clone(value));
         return this;
@@ -129,7 +129,7 @@
       };
 
       Matrix.prototype.destroy = function () {
-        this._events = {};
+        this._events = this._store = null;
         delete cache[wrapKey(this.namespace)];
       };
 
@@ -140,7 +140,7 @@
       }
 
       warehouse.NAME = 'ng-warehouse';
-      warehouse.VERSION = 'v0.1.0';
+      warehouse.VERSION = 'v0.1.1';
       return warehouse;
   }]);
 
