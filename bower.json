@@ -1,0 +1,27 @@
+{
+  "name": "ng-warehouse",
+  "description": "A data cache with events for AngularJS.",
+  "main": "index.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/teambition/ng-warehouse",
+  "authors": [
+    "Yan Qing <admin@zensh.com>"
+  ],
+  "keywords": [
+    "cache",
+    "store",
+    "angularjs",
+    "event"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jsonkit": ">=0.3.3"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "examples"
+  ]
+}

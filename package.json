@@ -1,0 +1,29 @@
+{
+  "name": "ng-warehouse",
+  "description": "A data cache with events for AngularJS.",
+  "main": "index.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/teambition/ng-warehouse",
+  "authors": [
+    "Yan Qing <admin@zensh.com>"
+  ],
+  "keywords": [
+    "cache",
+    "store",
+    "angularjs",
+    "event"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:teambition/ng-warehouse.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.5.6",
+    "gulp-jshint": "^1.8.4",
+    "run-sequence": "^0.3.6"
+  },
+  "scripts": {
+    "test": "gulp test"
+  }
+}
