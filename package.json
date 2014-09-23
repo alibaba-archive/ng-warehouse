@@ -2,7 +2,7 @@
   "name": "ng-warehouse",
   "description": "A data cache with events for AngularJS.",
   "main": "index.js",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "homepage": "https://github.com/teambition/ng-warehouse",
   "authors": [
     "Yan Qing <admin@zensh.com>"

@@ -139,8 +139,16 @@
         return cache[namespace];
       }
 
+      warehouse.getAll = function () {
+        var result = {};
+        JSONKit.each(cache, function (subCache, namespace) {
+          result[namespace] = subCache._store.getAll();
+        });
+        return result;
+      };
+
       warehouse.NAME = 'ng-warehouse';
-      warehouse.VERSION = 'v0.1.1';
+      warehouse.VERSION = 'v0.2.0';
       return warehouse;
   }]);
 
