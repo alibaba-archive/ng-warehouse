@@ -20,10 +20,12 @@ angular.module('demoApp', ['data.warehouse'])
 
     userCache.bind($scope, 'add', function (userId, user) {
       $scope.userList.push(user);
+      if (!$scope.$$phase) $scope.$apply();
     });
 
     articleCache.bind($scope, 'add', function (articleId, article) {
       $scope.articleList.push(article);
+      if (!$scope.$$phase) $scope.$apply();
     });
 
     //...more
