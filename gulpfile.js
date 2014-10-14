@@ -2,7 +2,7 @@
 /* global require */
 
 var gulp = require('gulp'),
-  runSequence = require('run-sequence'),
+  gulpSequence = require('gulp-sequence'),
   jshint = require('gulp-jshint');
 
 gulp.task('jshint', function () {
@@ -11,10 +11,6 @@ gulp.task('jshint', function () {
     .pipe(jshint.reporter('default'));
 });
 
-gulp.task('default', function (callback) {
-  runSequence('jshint', callback);
-});
+gulp.task('default', ['test']);
 
-gulp.task('test', function (callback) {
-  runSequence('default', callback);
-});
+gulp.task('test', ['jshint']);
